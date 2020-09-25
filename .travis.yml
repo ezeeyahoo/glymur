@@ -29,6 +29,10 @@ before_install:
   - uname -a
   - git --version
   - hash -r
+  - |
+      if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then
+        sudo chown -Rv $USER:$GROUP ~/.cache/pip/wheels
+      fi
 
 install:
   - echo "install"
