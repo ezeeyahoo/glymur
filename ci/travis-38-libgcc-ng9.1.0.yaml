@@ -4,8 +4,8 @@ channels:
     - anaconda
 dependencies:
     - python=3.8.*
-    - libgcc-ng=9.1.*
-    - libstdcxx-ng=9.1.*
+    - libgcc-ng
+    - libstdcxx-ng
     - gdal
     - lxml
     - numpy
