@@ -1,6 +1,7 @@
 name: glymur
 channels:
     - conda-forge
+    - anaconda
 dependencies:
     - python=3.8.*
     - libgcc-ng=9.1.*
