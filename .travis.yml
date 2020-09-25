@@ -20,7 +20,7 @@ matrix:
     - python: 3.8
       arch: ppc64le
       env:
-        - JOB="3.8" ENV_FILE="ci/travis-38.yaml"
+        - JOB="3.8" ENV_FILE="ci/travis-38-libgcc-ng9.1.0.yaml"
 before_install:
   - echo "before_install"
   - sudo apt-get update

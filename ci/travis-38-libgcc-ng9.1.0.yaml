@@ -1,0 +1,13 @@
+name: glymur
+channels:
+    - conda-forge
+dependencies:
+    - python=3.8.*
+    - libgcc-ng=9.1.0
+    - libstdcxx-ng=9.1.0
+    - gdal
+    - lxml
+    - numpy
+    - openjpeg
+    - scikit-image
+

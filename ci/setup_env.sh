@@ -53,13 +53,13 @@ conda list
 #  `conda env remove` issue)
 conda remove --all -q -y -n glymur
 
-echo "conda activate glymur"
-conda activate glymur
-
 echo
 echo "conda env create -q --file=${ENV_FILE}"
 time conda env create -q --file="${ENV_FILE}"
 
+
+echo "conda activate glymur"
+conda activate glymur
 
 # Make sure any error below is reported as such
 
