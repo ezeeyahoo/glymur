@@ -17,15 +17,6 @@ matrix:
     - python: 3.8
       env:
         - JOB="3.8" ENV_FILE="ci/travis-38.yaml"
-    #PPC64LE
-    - python: 3.7
-      arch: ppc64le
-      env:
-        - JOB="3.7" ENV_FILE="ci/travis-37.yaml"
-    - python: 3.7
-      arch: ppc64le
-      env:
-        - JOB="3.7" ENV_FILE="ci/travis-37-no-gdal.yaml"
     - python: 3.8
       arch: ppc64le
       env:

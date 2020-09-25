@@ -11,6 +11,9 @@ echo "set MINICONDA_DIR to ""$MINICONDA_DIR"
 UNAME_OS=$(uname)
 if [[ "$UNAME_OS" == 'Linux' ]]; then
     CONDA_OS="Linux-x86_64"
+    if [[ "$TRAVIS_CPU_ARCH" == "ppc64le" ]]; then
+        CONDA_OS="Linux-ppc64le"
+    fi
 elif [[ "$UNAME_OS" == 'Darwin' ]]; then
     CONDA_OS="MacOSX-x86_64"
 else
